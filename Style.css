@@ -3,15 +3,68 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Guardian Sans", sans-serif;
+  font-family: 'Guardian', serif;
+}
+
+@font-face {
+  font-family: 'Guardian';
+  src: url('font/guardian-sans/GuardianSansRegular.otf') format('woff2'),
+       url('font/guardian-sans/GuardianSansMedium.otf') format('woff'),
+       url('font/guardian-sans/GuardianSansBold.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Guardian', serif;
 }
 
 /* Hero Section */
 .hero-section {
   background: url('images/img/GNSS_receiver_web_hero_v2.jpg') no-repeat center center/cover;
   height: 100vh;
+  /* width:100%; */
   position: relative;
 }
+
+.text-style-white {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+.text-style-grey,
+.offering-item p,
+.gnss-receivers p , .form-group label , .accordion , .panel {
+  font-size: 16px;
+  color: #666;
+  letter-spacing: 0.2px;
+  line-height: 1.6;
+}
+
+/* .form-group {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+} */
+
+.gnss-receivers p {
+  margin-bottom: 40px;
+}
+
+.overlay .container {
+  padding-left: 0px !important;
+}
+
+.overlay .container .content {
+  padding-left: 0px;
+}
+
+/* .content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+} */
 
 /* Overlay */
 .overlay {
@@ -35,9 +88,9 @@
   margin-bottom: 20px;
 }
 
-.content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.container{
+  max-width: 1200px;
+  width: 100% !important;
 }
 
 /* feature code started */
@@ -48,9 +101,10 @@
 }
 
 .gnss-receivers .container {
-  max-width: 1200px;
+  max-width: 1200px !important;
+  width: 100% !important;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -58,14 +112,9 @@
   /* font-size: 2.5rem; */
   margin-bottom: 20px;
   color: #053764;
-  letter-spacing: -2px;
+  letter-spacing: -.5px;
 }
 
-.gnss-receivers p {
-  font-size: 16px;
-  margin-bottom: 40px;
-  color: #6c757d;
-}
 
 .gnss-receivers img {
   max-width: 100%;
@@ -117,7 +166,7 @@ footer {
   text-align: center;
 }
 
-.footer-container {
+.footer-container{
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -130,8 +179,9 @@ footer {
   width: 150px;
 }
 
-.footer-logo ,.footer-links{
-    text-align: left;
+.footer-logo,
+.footer-links {
+  text-align: left;
 }
 
 .footer-links ul {
@@ -182,7 +232,7 @@ hr {
 
 section.get-in-touch {
   padding: 60px;
-  background-color : #fff;
+  background-color: #fff;
 
 }
 
@@ -190,7 +240,7 @@ section.get-in-touch {
   font-size: 50px;
   font-weight: 700;
   color: #053764;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 15px;
 }
 
@@ -200,11 +250,12 @@ section.get-in-touch {
 
 .section-heading {
   font-size: 50px !important;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: 700 !important;
   color: #053764;
   margin-top: 0px !important;
   text-align: center;
+  letter-spacing: -.5px;
 }
 
 .section-heading1 {
@@ -221,19 +272,29 @@ section.get-in-touch {
   border-radius: 0 !important;
 }
 
+.navbar-container {
+  align-items: center;
+  display: flex;
+}
+
 .nav-container {
-  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #001423;
+  box-shadow: 2px 4px 11px 0px #8888885c;
+  padding-right: 60px;
+  z-index: 1;
+  position: fixed;
+  width: 100% !important;
+  max-width: 100%;
 }
 
 .logo img {
-  width: 25%;
+  width: 30%;
   padding: 10px 10px;
-  margin-left: 25%;
+  margin-left: 15px;
 }
 
 .nav-links {
@@ -243,7 +304,7 @@ section.get-in-touch {
 }
 
 .nav-links li {
-  margin: 10px 40px;
+  margin: 10px 25px;
 }
 
 .nav-links li a {
@@ -305,7 +366,7 @@ section.get-in-touch {
   border: 1px solid #ddd;
   border-radius: 8px;
   width: 360px;
-  padding: 20px 20px 25px 20px;
+  padding: 20px 15px 25px 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
@@ -317,14 +378,9 @@ section.get-in-touch {
 }
 
 .offering-item h3 {
-  font-size: 1.5em;
   margin: 15px 0;
 }
 
-.offering-item p {
-  font-size: 1em;
-  color: #666;
-}
 
 
 
@@ -333,9 +389,10 @@ h5 {
 }
 
 
-.btn1 {
-  background-color: #fff;
-  color: #053764;
+.btn1,
+.btn2:hover {
+  background-color: #b99d2d;
+  color: white;
   padding: 12px 24px;
   border-radius: 5px;
   font-weight: 500;
@@ -343,7 +400,7 @@ h5 {
   text-decoration: none;
 }
 
-.btn2{
+.btn2 {
   background-color: #053764;
   color: #fff;
   padding: 12px 24px;
@@ -354,21 +411,15 @@ h5 {
   border: none;
 }
 
-.btn2:hover , .btn1:hover {
-  color: white;
+.btn1:hover {
+  background-color: #fff;
+  color: #053764;
+
   text-decoration: none;
-  background-color:#b99d2d;
+
   border: none;
 }
 
-.nav-container {
-  padding-right: 60px;
-  z-index: 1;
-  position: fixed;
-  width: 100% !important;
-  max-width: 100%;
-  border-bottom: 1px solid #ffffff82;
-}
 
 .overlay {
   /* margin-top: -75px; */
@@ -398,6 +449,7 @@ a.btn2 {
   font-size: 14px;
   text-decoration: none !important;
 }
+
 .contact-link:hover {
   text-decoration: none;
   color: #fff;
@@ -406,8 +458,8 @@ a.btn2 {
 
 
 .cta-button {
-  background-color: #fff;
-  color: #053764;
+  background-color: #b99d2d;
+  color: white;
   padding: 12px;
   border-radius: 5px;
   font-weight: 600;
@@ -417,13 +469,14 @@ a.btn2 {
 
 .cta-button:hover {
   text-decoration: none;
-  background-color: #b99d2d;
-  color:white;
+  background-color: #fff;
+  color: #053764;
+
 }
 
 
 .accordion {
-  border: 2px solid #053764 !important;
+  border: 2px solid #ddd !important;
   border-radius: 10px;
   margin-top: 10px;
   color: #444;
@@ -433,23 +486,23 @@ a.btn2 {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 16px;
   transition: 0.4s;
   margin-bottom: 2px;
   font-weight: 600;
+  margin-left: 20px;
 }
 
 
 
 .panel {
-  padding:10px;
+  padding: 10px;
   display: none;
   background-color: white;
   overflow: hidden;
   margin-bottom: 0px !important;
 }
 
-.FAQ-section{
+.FAQ-section {
   padding: 80px 140px 80px 140px;
   background-color: #f7f7f7;
 }
@@ -458,7 +511,7 @@ a.btn2 {
 .accordion i {
   transition: transform 0.3s ease;
   float: inline-end;
-  color:#053764;
+  color: #a09e9e;
 }
 
 .accordion.active i {
@@ -467,10 +520,19 @@ a.btn2 {
 }
 
 
-h3{
+h3 {
   font-weight: 600 !important;
 }
 
-.icon-color , .icon-color a{
+.icon-color,
+.icon-color a {
   color: white !important;
 }
+
+.content-width {
+  max-width: 1200px !important;
+}
+
+
+
+/* Responsive */

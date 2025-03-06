@@ -10,42 +10,51 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Guardian&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
 
     <!-- header menu started -->
-    <nav class="navbar" id="navbar">
+     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo col-sm-3">
+            <div class="container navbar-container">
+            <div class="logo col-sm-3 ">
                 <a href="#"><img src="images/img/terria_logo-img.png" alt="Company Logo"></a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 ">
+                <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
                 <ul class="nav-links">
                     <li><a href="#products">PRODUCTS</a></li>
                     <li><a href="#features">FEATURES</a></li>
-                    <li><a href="#contact-us">CONTACT US</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact-us">CONTACT US</a></li>
                 </ul>
             </div>
 
             <div class="col-sm-3 contact-info">
-                <a href="mailto:info@example.com" class="contact-link">Email: info@example.com</a>
-                <a href="tel:+1234567890" class="cta-button">+1 (234) 567-890</a>
+                <!-- <a href="mailto:info@example.com" class="contact-link">Email: info@example.com</a>
+                <a href="tel:+1234567890" class="cta-button">+1 (234) 567-890</a> -->
             </div>
         </div>
         </div>
-    </nav>
+        </div>
+    </nav> 
+
+
 
     <!-- header menu Ended -->
 
     <!--1st hero section Started -->
     <section class="hero-section">
+        
         <div class="overlay">
+          <div class="container">
             <div class="content">
                 <h1 class="section-heading1">GNSS Bases , Rovers &<br> Yarra Instrumentation</h1>
-                <p>Precision solutions for modern positioning challenges. Global Navigation Satellite Systems (GNSS)
+                <p class="text-style-white">Precision solutions for modern positioning challenges. Global Navigation Satellite Systems (GNSS)
                     face
                     challenges such as<br>
                     multipath propagation and signal blockages in urban environments. To address
@@ -54,12 +63,14 @@
                     signal processing and mitigate errors.</p>
                 <a href="#products" class="btn1">Learn More</a>
             </div>
+          </div>
         </div>
     </section>
     <!-- hero section Ended -->
 
     <!--2nd Product Section started -->
     <section class="related-offerings" id="products">
+        <div class="container">
         <h2 class="section-heading">Our Product</h2>
         <div class="offerings-container">
             <div class="offering-item">
@@ -114,6 +125,7 @@
             </div>
 
         </div>
+    </div>
     </section>
 
     <!-- Product Section Ended -->
@@ -165,6 +177,7 @@
     <!-- FAQ section started -->
 
     <section class="FAQ-section" id="faq">
+      <div class="container">
         <h2 class="section-heading">Frequently Asked Questions</h2>
         <button class="accordion">What is GNSS?  <i class="fa fa-chevron-down"></i></button>
         <div class="panel">
@@ -196,6 +209,7 @@
         <div class="panel">
             <p>Real-Time Kinematic (RTK) GNSS enhances positioning accuracy by using a stationary base station to
                 provide correction data to the moving receiver, achieving centimeter-level precision.</p>
+        </div>
         </div>
     </section> 
     <!-- FAQ section Ended -->
@@ -266,7 +280,7 @@
                 </div>
 
                 <div class="form-group col-sm-6">
-                    <label for="email">Email:</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" class="form-control" required>
                 </div>
 
@@ -371,6 +385,11 @@
                     panel.style.display = "block";
                 }
             });
+        }
+
+
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
         }
 
 
