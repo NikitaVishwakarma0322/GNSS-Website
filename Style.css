@@ -501,6 +501,7 @@ a.btn2 {
   overflow: hidden;
   margin-bottom: 0px !important;
   margin-left: 20px;
+  width: 100%;
 }
 
 .FAQ-section {
