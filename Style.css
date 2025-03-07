@@ -592,6 +592,7 @@ h3 {
     color: white;
     position: absolute;
     right: 30px;
+    font-size: 45px !important;
   }
 
   .nav-links {
