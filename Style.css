@@ -196,6 +196,9 @@ body {
   padding: 8px;
   box-sizing: border-box;
 }
+.form-control{
+  font-size: 14px !important;
+}
 
 .stacked-form div {
   padding: 0px 5px;
