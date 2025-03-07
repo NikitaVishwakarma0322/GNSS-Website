@@ -326,18 +326,15 @@ hr {
 
 .nav-container {
   height: 100px;
-  /* margin-top: 45px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #001423;
   box-shadow: 2px 4px 11px 0px #8888885c;
-  /* padding-right: 60px; */
   z-index: 1;
   position: fixed;
   width: 100% !important;
   max-width: 100%;
-  /* margin-top: 10px; */
 }
 
 .logo img {
@@ -389,9 +386,7 @@ hr {
 .offerings-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   justify-content: space-between;
-  /* gap: 20px; */
 }
 
 .offering-item {
@@ -431,6 +426,7 @@ h5 {
   text-decoration: none;
 }
 
+
 .btn2 {
   background-color: #053764;
   color: #fff;
@@ -440,28 +436,20 @@ h5 {
   font-size: 14px;
   text-decoration: none;
   border: none;
+  align-self: flex-start;
 }
 
 .btn1:hover {
   background-color: #fff;
   color: #053764;
-
   text-decoration: none;
-
   border: none;
 }
 
+.offering-item p:last-of-type{
+    flex-grow: 1;
+}
 
-/* .overlay {
-  padding-top: 60px;
-} */
-
-
-
-/* a.btn2 {
-  position: absolute;
-  bottom: 20px;
-} */
 
 /* .offering-item {
   position: relative;
