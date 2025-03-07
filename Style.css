@@ -747,10 +747,13 @@ h3 {
     margin-top: 20px;
   }
 
-  .footer-logo,
-  .footer-links {
-    width: 100%;
+  .footer-logo ,  .address{
+    width: 50%;
     text-align: center;
+  }
+
+  .usefull-link{
+    display: none;
   }
 
   .footer-links p,
