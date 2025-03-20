@@ -230,7 +230,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 150px;
+  width: 50%;
 }
 
 .footer-logo,
@@ -362,14 +362,15 @@ hr {
 }
 
 .logo img {
-  width: 50%;
-  padding: 10px 10px;
-  margin-left: 0px;
+  width: 40%;
+  padding: 10px;
+  margin-left: 15px;
 
 }
 
 .logo {
-  text-align: center;
+  text-align: left;
+  margin-left: 30px;
 }
 
 .nav-links {
@@ -640,13 +641,16 @@ h3 {
   }
 
   .logo img {
-    width: 50%;
+    width: 30%;
     /* padding:15px 10px 10px 10px; */
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    padding-left: 0px;
   }
 
   .logo {
     text-align: left;
+    margin-left:0px;
+    
   }
 
   /* hero section  start*/
@@ -760,10 +764,15 @@ h3 {
     display: none;
   }
 
-  .footer-links p,
+  
   .footer-links li,
   .footer-copy p {
-    font-size: 20px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .footer-links p{
+    font-size: 17px;
     text-decoration: none;
   }
 
